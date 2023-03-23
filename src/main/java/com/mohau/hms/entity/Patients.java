@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Entity
 @Table(name = "patient")
-public class Patient {
+public class Patients {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer patientId;
