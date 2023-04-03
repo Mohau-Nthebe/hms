@@ -1,8 +1,6 @@
 package com.mohau.hms.entity;
 
 import jakarta.persistence.*;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,22 +11,21 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "patient")
-public class Patient {
+@Table(name = "address")
+public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String name;
+    private String street;
 
     @Column(nullable = false)
-    private String email;
+    private String city;
 
     @Column(nullable = false)
-    private String phone;
+    private String province;
 
-    @ManyToOne
-    @JoinColumn(name = "address_id", nullable = false)
-    private Address address;
+    @Column(nullable = false)
+    private String zipCode;
 }
