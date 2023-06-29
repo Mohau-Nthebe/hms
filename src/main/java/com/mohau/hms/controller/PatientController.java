@@ -41,7 +41,7 @@ public class PatientController {
             patient.setName(patientDetails.getName());
             patient.setEmail(patientDetails.getEmail());
             patient.setPhone(patientDetails.getPhone());
-            patient.setAddress(patientDetails.getAddress());
+            patient.setSurname(patient.getSurname());
             Patient updatedPatient = patientRepository.save(patient);
             return ResponseEntity.ok(updatedPatient);
         } else {

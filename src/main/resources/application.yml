@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/hospit_db
-    username: devmo
-    password: devmo011
+    url: jdbc:postgresql://stampy.db.elephantsql.com/basnaday
+    username: basnaday
+    password: 8V6sF-zRfuzxuot-7FDUZK6Ci-lDREq3
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
