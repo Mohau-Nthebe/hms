@@ -23,12 +23,11 @@ public class Patient {
     private String name;
 
     @Column(nullable = false)
+    private String surname;
+
+    @Column(nullable = false)
     private String email;
 
     @Column(nullable = false)
     private String phone;
-
-    @ManyToOne
-    @JoinColumn(name = "address_id", nullable = false)
-    private Address address;
 }
